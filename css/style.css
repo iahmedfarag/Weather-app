@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Shantell Sans", cursive;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar {
+  height: 70px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-bottom: 2px solid #111;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+.navbar .container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.navbar .container .right {
+  display: flex;
+}
+.navbar .container .right h4 {
+  margin-left: 10px;
+}
+
+.search {
+  padding: 50px 0;
+  border-bottom: 1px solid #111;
+}
+.search .container {
+  position: relative;
+}
+.search .container input {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  font-weight: bolder;
+  outline: none;
+  border: 1px solid #111;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.search .container input:focus {
+  outline: 1px solid #222;
+  background-color: #f1f1f1;
+}
+.search .container .alert {
+  display: none;
+  position: absolute;
+  transform: 0.5s;
+  color: red;
+  text-align: center;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.location {
+  margin-bottom: 30px;
+  height: 200px;
+  background-image: url(../content1.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+.location .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.location .container .circle {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.content .container {
+  display: flex;
+  justify-content: space-between;
+}
+.content .container .box {
+  width: 32.3333333333%;
+  margin: 0 0.5%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 10px;
+}
+.content .container .box.active {
+  background-color: #f1f1f1;
+  box-shadow: none;
+}
+.content .container .box .header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #111;
+}
+.content .container .box .data {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.content .container .box .data .text {
+  width: 100%;
+  margin-top: 15px;
+}
+.content .container .box .footer button {
+  display: block;
+  padding: 5px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more {
+  display: none;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+}
+.more.active {
+  display: block;
+}
+.more .container {
+  display: flex;
+}
+.more .container p:not(:last-child) {
+  margin-bottom: 5px;
+}
+.more .container .left {
+  width: 25%;
+}
+.more .container .hours {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.more .container .hours ul {
+  padding-left: 10px;
+}
+.more .container .hours ul:not(:last-child) {
+  border-right: 1px solid #111;
+  padding-right: 10px;
+}
+.more .container .hours ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #111;
+}
+.more .container .hours ul li p.time {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
